@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import axios from "axios";
 import { PiCameraLight } from "react-icons/pi";
-import { LuSendHorizonal } from "react-icons/lu";
+// import { LuSendHorizonal } from "react-icons/lu";
 import Webcam from "react-webcam";
 import { IoMdAttach } from "react-icons/io";
 import ReactMarkdown from "react-markdown";
@@ -353,7 +353,7 @@ function AskQuestion() {
                 className={`p-2 rounded-full ${
                   isLoading ? "bg-gray-400" : "bg-primary hover:bg-primary"
                 } text-white`}>
-                <LuSendHorizonal className="text-2xl" />
+               {/* <LuSendHorizonal className="text-2xl" /> */}
               </button>
             </div>
           </div>
