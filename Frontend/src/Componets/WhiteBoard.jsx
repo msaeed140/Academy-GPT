@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Excalidraw, MainMenu, WelcomeScreen } from "excalidraw";
+import { Excalidraw, MainMenu, WelcomeScreen } from "@excalidraw/excalidraw";
 import { ZoomToolBar } from "./ZoomToolBar";
 import { ColorToolBar } from "./ColorToolBar";
 import { TextFormatToolBar } from "./TextFormatToolBar";
