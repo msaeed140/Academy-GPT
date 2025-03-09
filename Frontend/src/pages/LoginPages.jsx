@@ -28,14 +28,15 @@ const LoginPages = () => {
           password: password,
         }
       );
-      console.log(response.data )
+      console.log(response.data.data);
 
       // Check if login is successful and response contains a token and user info
-      if (response.status === 200 && response.data.key) {
-        const { key, is_student, is_teacher } = response.data;
-
+      if (response?.data?.statusCode === 200 && response?.data?.data) {
+        // const { key, is_student, is_teacher } = response.data;
+        const { is_student, is_teacher } = response.data.data.user;
+        console.log("cehck====>", response.data);
         // Save token in localStorage or any secure place
-        localStorage.setItem("token", key);
+        localStorage.setItem("token",response?.data?.data?.access );
 
         // Navigate based on user role
         if (is_student) {
@@ -110,7 +111,8 @@ const LoginPages = () => {
           </div>
           <button
             className="p-2 w-full text-2xl font-bold rounded-md text-white bg-primary"
-            onClick={handleLogin}>
+            onClick={handleLogin}
+          >
             Login
           </button>
           <p className="hidden lg:block text-center text-sm py-2 font-medium">
