@@ -57,7 +57,7 @@ const SignupPages = () => {
 
     try {
       const response = await axios.post(
-        "https://api.academygpt.net/api/auth/registration",
+        "https://academy-gpt-backend.onrender.com/api/auth/registration",
         {
           first_name: firstName,
           last_name: lastName,
@@ -72,7 +72,7 @@ const SignupPages = () => {
       );
 
       if (response.status === 201) {
-        navigate("/leanernavbar");
+        navigate("/loginpage");
       }
     } catch (error) {
       setError(

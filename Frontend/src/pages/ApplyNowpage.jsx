@@ -62,7 +62,7 @@ const ApplyNowPage = () => {
 
     try {
       const response = await axios.post(
-        "https://api.academygpt.net/api/auth/registration",
+        "https://academy-gpt-backend.onrender.com/api/auth/registration",
         {
           email: email,
           password1: password,
@@ -96,13 +96,13 @@ const ApplyNowPage = () => {
         setError("Registration failed. Please try again.");
       }
     }
-
   };
 
   const customOption = (props) => (
     <div
       {...props.innerProps}
-      className="flex items-center my-auto p-2 cursor-pointer ">
+      className="flex items-center my-auto p-2 cursor-pointer "
+    >
       <img
         src={props.data.flag}
         alt="flag"
@@ -262,7 +262,8 @@ const ApplyNowPage = () => {
               <button
                 type="submit"
                 onClick={handleRegister}
-                className="p-2 w-full lg:w-72 flex justify-center text-2xl font-bold rounded-md text-white bg-primary">
+                className="p-2 w-full lg:w-72 flex justify-center text-2xl font-bold rounded-md text-white bg-primary"
+              >
                 Next <IoIosArrowForward className="my-auto ml-3" />
               </button>
             </div>
@@ -309,7 +310,8 @@ const ApplyNowPage = () => {
               </button>
               <button
                 onClick={() => navigate("/tutornavbar")}
-                className="p-2 w-full flex justify-center text-xl xl:text-2xl font-bold rounded-md text-white bg-primary">
+                className="p-2 w-full flex justify-center text-xl xl:text-2xl font-bold rounded-md text-white bg-primary"
+              >
                 Verify
               </button>
             </div>
