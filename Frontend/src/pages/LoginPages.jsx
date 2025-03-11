@@ -22,7 +22,7 @@ const LoginPages = () => {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "https://api.academygpt.net/api/auth/login/",
+        "https://academy-gpt-backend.onrender.com/api/auth/login",
         {
           email: email,
           password: password,
@@ -36,7 +36,7 @@ const LoginPages = () => {
         const { is_student, is_teacher } = response.data.data.user;
         console.log("cehck====>", response.data);
         // Save token in localStorage or any secure place
-        localStorage.setItem("token",response?.data?.data?.access );
+        localStorage.setItem("token", response?.data?.data?.access);
 
         // Navigate based on user role
         if (is_student) {

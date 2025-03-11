@@ -24,25 +24,25 @@ const TutorNavbar = () => {
 
   const menuItems = [
     { label: "DASHBOARD", key: "dashboard", path: "/tutornavbar/dashboard" },
-    { label: "ONE ON ONE", key: "oneonone", path: "/tutornavbar/oneonone" },
-    { label: "GROUP (4)", key: "group4", path: "/tutornavbar/group4" },
-    {
-      label: "GROUP (4+)",
-      key: "group4plus",
-      path: "/tutornavbar/group4plus",
-    },
+    // { label: "ONE ON ONE", key: "oneonone", path: "/tutornavbar/oneonone" },
+    // { label: "GROUP (4)", key: "group4", path: "/tutornavbar/group4" },
+    // {
+    //   label: "GROUP (4+)",
+    //   key: "group4plus",
+    //   path: "/tutornavbar/group4plus",
+    // },
     {
       label: "LEARNER QUESTIONS",
       key: "learnerquestions",
       path: "/tutornavbar/leanerquestions",
     },
-    {
-      label: "ASK QUESTION",
-      key: "askquestion",
-      path: "/tutornavbar/askquestion",
-    },
+    // {
+    //   label: "ASK QUESTION",
+    //   key: "askquestion",
+    //   path: "/tutornavbar/askquestion",
+    // },
     { label: "CONTACT", key: "contact", path: "/tutornavbar/contact" },
-    { label: "REVIEW", key: "review", path: "/tutornavbar/review" },
+    // { label: "REVIEW", key: "review", path: "/tutornavbar/review" },
     { label: "ABOUT US", key: "aboutus", path: "/aboutpage" },
   ];
 
