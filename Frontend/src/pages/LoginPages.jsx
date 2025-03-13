@@ -36,7 +36,9 @@ const LoginPages = () => {
         const { is_student, is_teacher } = response.data.data.user;
         console.log("cehck====>", response.data);
         // Save token in localStorage or any secure place
+
         localStorage.setItem("token", response?.data?.data?.access);
+  
 
         // Navigate based on user role
         if (is_student) {
